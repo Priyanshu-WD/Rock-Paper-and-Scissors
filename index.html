@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock || Paper || Scissors</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Rock Paper & Scissors</h1>
+      <section class="sec1">
+        <button class="btn1" id="rock"><i class="far fa-hand-rock"></i></button>
+        <button class="btn1" id="paper">
+          <i class="far fa-hand-paper"></i>
+        </button>
+        <button class="btn1" id="scissors">
+          <i class="far fa-hand-scissors"></i>
+        </button>
+      </section>
+
+      <div class="score-board">
+        <div class="score">
+          <p id="user-score">0</p>
+          <p>You</p>
+        </div>
+        <div class="score">
+          <p id="comp-score">0</p>
+          <p>Comp</p>
+        </div>
+      </div>
+
+      <div class="msg-container">
+        <p id="msg">Play your move</p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

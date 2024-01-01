@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #d58048;
+  --white-color: #fff;
+  --bg-icon: rgb(225, 212, 70);
+  --black-color: #000;
+  --cont-color: #081b31;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+main {
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: "Quicksand";
+  text-shadow: 2px 2px var(--white-color);
+}
+
+.sec1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn1 {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--bg-icon);
+  font-size: 3rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  border: 2px solid  var(--white-color);
+}
+
+.btn1:hover {
+  box-shadow: 1 1 40 10 var(--black-color);
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+  font-family: "Quicksand";
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
+
+.msg-container {
+  margin-top: 5rem;
+}
+
+#msg {
+  background-color: var(--cont-color);
+  color: #fff;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    #msg {
+        display: block;
+        width: 22rem;
+        margin: auto;
+        
+    }
+}
